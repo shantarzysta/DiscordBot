@@ -11,7 +11,7 @@ public class Main {
     public static String prefix = "-";
 
     public static void main(String[] args) throws LoginException{
-        jda = JDABuilder.createDefault("ODEzMzk5MTE0NjU3OTU1ODQw.YDOu9Q.Toc7aEeegjSpWAmwUD-zS86TY7w").build();
+        jda = JDABuilder.createDefault("TOKEN-SECRET").build();
         jda.addEventListener(new Clear());
         jda.addEventListener(new AntiWarcin());
         jda.getPresence().setStatus(OnlineStatus.ONLINE);
